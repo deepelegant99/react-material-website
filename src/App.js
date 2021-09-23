@@ -9,6 +9,9 @@ const App = () => {
   return (
     <Router>
       <CssBaseline />
+      <Link to ="/">Home</Link>
+      <Link to ="/services">services</Link>
+      <Link to ="/contact">contact</Link>
       <Switch>
         <Route exact path="/">
           <Home />

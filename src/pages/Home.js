@@ -4,15 +4,7 @@ import Nav from "../components/Nav";
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
-  footerStyle: {
-    position: "absolute",
-    bottom:"0px", 
-  },
-});
-
 const Home = () => {
-  const classes = useStyles();
 
   return (
     <Grid container>
@@ -21,10 +13,7 @@ const Home = () => {
       </Grid>
       <Grid item>Body</Grid>
       <Grid item xs={12}>
-        {/* <Footer /> */}
-        <div className={classes.footerStyle}>
-          <Nav />
-        </div>
+        <Footer />
       </Grid>
     </Grid>
   );
