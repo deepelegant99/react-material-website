@@ -4,9 +4,12 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   footerStyle: {
+      width: 1360,
+      height: 50,
     backgroundColor:"blue",
     color:"white",
     position: "absolute",
+    margin:"0px",
     bottom:"0px", 
   },
 });

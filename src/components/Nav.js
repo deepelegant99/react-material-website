@@ -1,4 +1,8 @@
-import { Link } from "react-router-dom";
+import Home from "../pages/Home";
+import Services from "../pages/Services";
+import Contact from "../pages/Contact";
+import {CssBaseline} from '@material-ui/core';
+import { Link, BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // This is material UI libraries
 import { makeStyles } from "@material-ui/core/styles";
@@ -39,27 +43,23 @@ const Nav = () => {
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             News
+            </Typography>
+            <Typography variant="h6" className={classes.title}>
+           <Link to = "/"> Home</Link>      
           </Typography>
+          <Typography variant="h6" className={classes.title}>
+          <Link to ="/services">services</Link>      
+          </Typography>
+          <Typography variant="h6" className={classes.title}>
+          <Link to ="/contact">contact</Link>      
+          </Typography>
+
+
           <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </div>
   );
 };
-// return (
-//   <div>
-//     <ul>
-//       <li>
-//         <Link to="\">Home</Link>
-//       </li>
-//       <li>
-//         <Link to="\Services">Services</Link>
-//       </li>
-//       <li>
-//         <Link to="\contact">Contact</Link>
-//       </li>
-//     </ul>
-//   </div>
-// );
 
 export default Nav;
