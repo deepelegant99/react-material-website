@@ -4,9 +4,11 @@ import Contact from "./pages/Contact";
 import { Link, BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import {CssBaseline} from '@material-ui/core'
+import {CssBaseline} from '@material-ui/core';
+import { makeStyles } from "@material-ui/core/styles";
+
 const App = () => {
-  return (
+return (
     <Router>
       <CssBaseline />
       <Switch>
@@ -23,5 +25,4 @@ const App = () => {
     </Router>
   );
 };
-
 export default App;
